@@ -1,2 +1,4 @@
 # TrianguloDeSierpinski
-Fractal matemático triangular gerado iterativamente com pontos médios ponderados. Implementação Python com Matplotlib.
+O código gera o Triângulo de Sierpinski a partir de três pontos iniciais que formam um triângulo equilátero. No entanto, é possível escolher qualquer ponto inicial para gerar o Triângulo de Sierpinski a partir dele, alterando os pontos iniciais (fist_p, second_p, third_p) no código. A recursão é realizada calculando os pontos médios entre cada par de pontos escolhidos aleatoriamente entre os pontos iniciais e os pontos médios obtidos anteriormente. O processo é repetido para um número específico de iterações (n_interations) para obter uma imagem detalhada do Triângulo de Sierpinski.
+
+Embora o exemplo utilize um triângulo como figura geométrica inicial, é importante destacar que qualquer figura geométrica pode ser usada para gerar o Triângulo de Sierpinski. O triângulo é apenas uma escolha comum por sua simplicidade e facilidade de visualização.
