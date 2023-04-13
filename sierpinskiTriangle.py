@@ -7,11 +7,11 @@ def median_point(p1, p2):
        return [(p1[0] + p2[0]) / 2, (p1[1] + p2[1]) / 2]
 
 # Function to generate Sierpinski Triangle fractal
-def sierpinski_triangle(fp, sp, tp, loops, markersize=10, new = None):
+def sierpinski_triangle(fp, sp, tp, n_iterations, markersize=10, new = None):
        if new is None: # If new is not provided, set it to [fp[0] + 1, fp[1] + 1]
               new = [fp[0] + 1, fp[1] + 1]
        all_points = [fp, sp, tp, new] # List to store all points (vertices and new points)
-       for i in range(loops):
+       for i in range(n_iterations):
               chosen = random.choice([fp, sp, tp]) # Choose one of the vertices randomly
               new = median_point(new, chosen) # Calculate the median point between new point and chosen vertex
               all_points.append(new) # Add the new point to the list of all points
